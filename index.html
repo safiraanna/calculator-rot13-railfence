@@ -1,0 +1,64 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>ROT13-ZigZag Calculator</title>
+    <link rel="stylesheet" href="home.css">
+  </head>
+  <body>
+    
+    <div class="navbar">
+      <a href="index.html"><img src="Logo.png" alt="CalChip" class="logo-navbar"></a>
+      <div class="text-navbar">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="rot13.html">Rot13</a></li>
+              <li><a href="zigzag.html">ZigZag</a></li>
+          </ul>
+      </div>
+    </div>
+
+    <h1 class="judul">KALKULATOR CIPHER ROT13 & ZIG-ZAG</h1>
+
+
+    <div class="container">
+      <div class="grid-container full">
+        <div class="centered-column">
+          <h1 class="ROT13"><a href="index.html">ROT13</a> </h1>
+          <h1 class="zigzag"><a href="zigzag.html">ZIGZAG</a> </h1>
+          <div class="calc">
+            <div class="encrypt-box">
+              <h3 class="encrypt-textbox">Enkripsi</h3>
+              <div class="garis-encryptbox"></div>
+              <textarea placeholder="Tulis pesan yang akan dienkripsikan" id="myInput" class="input"></textarea>
+              <button class="button button-primary" onClick="encryptROT13()" id="btn-en">Enkripsi</button>
+              <div class="ciphertext-hsl">
+                Ciphertext :             
+                <h4 id="myMessage" class="hasil"></h4>
+              </div>
+            </div>
+            <div class="decrypt-box">
+              <div class="centered-column">
+                <h3 class="encrypt-textbox">Dekripsi</h3>
+                <div class="garis-encryptbox"></div>
+                <textarea class="input" id="toDecrypt" placeholder="Enter Message to Decrypt"></textarea>
+                <button class="button button-primary" onClick="decryptROT13()" id="btn-en">Dekripsi</button>
+                <div class="ciphertext-hsl">
+                  Plaintext :             
+                  <h4 id="myDecryptedMessage" class="hasil"></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="information">
+      <h1 class="subjud">ROT 13</h1>
+      <p class="info-des">ROT 13 merupakan algoritma enkripsi sederhana yang menggunakan sandi abjad tunggal dengan pergeseran K=13. Sehingga huruf A diganti dengan N, B menjadi O.</p>
+      <img src="" alt="">
+    </div>
+  </body>
+  <script src='./index.js'></script>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>ROT13-ZigZag Calculator</title>
+    <link rel="stylesheet" href="home.css">
+  </head>
+  <body>
+    
+    <div class="navbar">
+      <a href="index.html"><img src="Logo.png" alt="CalChip" class="logo-navbar"></a>
+      <div class="text-navbar">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="rot13.html">Rot13</a></li>
+              <li><a href="zigzag.html">ZigZag</a></li>
+          </ul>
+      </div>
+    </div>
+
+    <h1 class="judul">KALKULATOR CIPHER ROT13 & ZIG-ZAG</h1>
+
+
+    <div class="container">
+      <div class="grid-container full">
+        <div class="centered-column">
+          <h1 class="ROT13"><a href="index.html">ROT13</a></h1>
+          <h1 class="zigzag"><a href="zigzag.html">ZIGZAG</a></h1>
+          <div class="calc">
+            <div class="key-box">
+              <h6 class="key-text">Key : </h6>
+              <textarea name="" id="key" cols="30" rows="2" class="key-input"></textarea>
+            </div>
+            <div class="offset-box">
+              <h6 class="key-text">Offset :</h6>
+              <textarea name="" id="" cols="25" rows="2" class="offset-input"></textarea>
+            </div>
+            <div class="zencrypt-box">
+              <h3 class="zencrypt-textbox">Enkripsi</h3>
+              <div class="zgaris-encryptbox"></div>
+              <textarea placeholder="Tulis pesan yang akan dienkripsikan" id="myInput" class="zinput"></textarea>
+              <button class="button button-primary" onClick="Encrypt()" id="zbtn-en">Enkripsi</button>
+              <div class="zciphertext-hsl">
+                Ciphertext :             
+                <h4 id="myMessage" class="hasil"></h4>
+              </div>
+            </div>
+            <div class="zdecrypt-box">
+              <div class="centered-column">
+                <h3 class="zencrypt-textbox">Dekripsi</h3>
+                <div class="zgaris-encryptbox"></div>
+                <textarea class="zinput" id="toDecrypt" placeholder="Enter Message to Decrypt"></textarea>
+                <button class="button button-primary" onClick="Decrypt()" id="zbtn-en">Dekripsi</button>
+                <div class="zciphertext-hsl">
+                  Plaintext :             
+                  <h4 id="myDecryptedMessage" class="zhasil"></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="information">
+      <h1 class="subjud">ZigZag</h1>
+      <p class="info-des">Enkripsi Rail Fence Cipher dilakukan dengan memasukkan Plaintext (Pt) ke tabel secara zigzag, hingga membentuk pola pagar rel (rail fence). Bentuk selalu simetris, bergantung pada nilai offset. Ciphertext (Ct) dibaca dengan acuan baris dari atas ke bawah.</p>
+      <img src="" alt="">
+    </div>
+  </body>
+  <script src='./zigzag.js'></script>
+</html>
