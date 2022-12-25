@@ -21,8 +21,8 @@
     <h1 class="judul">KALKULATOR CIPHER ROT13 & ZIG-ZAG</h1>
 
     <div class="cipher">
-      <h1 class="cipher-choice"><a href="ROT13.html" class="aa">ROT13</a> </h1>
-      <h1 class="cipher-choice"><a href="zigzag.html" class="aa active">ZIGZAG</a> </h1>
+      <h1 class="cipher-choice"><a href="ROT13.html" class="aa active">ROT13</a> </h1>
+      <h1 class="cipher-choice"><a href="zigzag.html" class="aa">ZIGZAG</a> </h1>
     </div>
     <div class="box-type">
       <div class="text-type">
@@ -33,34 +33,22 @@
         <h1 class="type-title">Cipher Text</h1>
         <input type="text" placeholder="Tulis Ciphertext" id="toDecrypt" class="input">
       </div>
-      <div class="input-key">
-        <p class="p-key">Key: </p>
-        <input placeholder="Key" type="text" id="key" class="box-key">
-      </div>
       <div class="btn">
-        <button class="button button-primary" onClick="EncryptZigZag()" id="btn-en">Enkripsi ></button>
-        <button class="button button-primary" onClick="DecryptZigZag()" id="btn-en"> < Dekripsi</button>
+        <button class="button button-primary" onClick="encryptROT13()" id="btn-en">Enkripsi ></button>
+        <button class="button button-primary" onClick="decryptROT13()" id="btn-en"> < Dekripsi</button>
       </div>
     </div>
   
     <div class="information">
-      <h1 class="subjud">ZIGZAG</h1>
+      <h1 class="subjud">ROT 13</h1>
       <div class="info-des">
-        <p>Rail Fence Cipher adalah salah satu teknik enkripsi untuk menyamarkan 
-          tulisan dengan mengubah posisi huruf atau karakter dengan bentuk diagonal ke bawah dan ke 
-          atas sehingga susunan aslinya tertukar. Bentuknya yang seperti zig-zag juga menyebabkan 
-          cipher ini dapat disebut Zig-Zag Cipher.
-        </p>
-        <p>
-          contoh ==> Plaintext = 'Leave The Money In The Brief Case' || Key = 2
-        </p>
-        <img src="ZIgzagDes.jpg" alt="">
-        <p>
-          Maka, Ciphertext dari Plaintext 'Leave The Money In The Brief Case' adalah:
-        </p>
-        <p>
-          LAE    HMN    YNH    BIF    AEE    VTE    OEI    TER    ECS
-        </p>
+        <p>ROT 13 merupakan algoritma enkripsi sederhana yang 
+          menggunakan sandi abjad tunggal dengan pergeseran K=13. Sehingga huruf A 
+          diganti dengan N, B menjadi O.</p>
+        <img src="ROT13Des.jpg" alt="">
+        <p>contoh ==> Plaintext = 'Informatika'</p>
+        <p>Maka, Ciphertext yang dihasilkan dari Plaintext 'Informatika' adalah: </p>
+        <p>Vasbezngvxn</p>
       </div>
     </div>
 
@@ -84,5 +72,5 @@
       </div>
     </div>
   </body>
-  <script src="zigzag.js"></script>
+  <script src='ROT13.js'></script>
 </html>

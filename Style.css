@@ -1,0 +1,249 @@
+body{
+    background-color: #fdfffc;
+}
+
+h1,p,a,input{
+    font-family: 'gotham';
+    text-decoration: none;
+    color: black;
+}
+
+.navbar{
+    position: absolute;
+    width: 60%;
+    height: 20%;
+    top: 20px;
+    left: 300px;
+}
+
+.logo-navbar{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+}
+
+.text-navbar{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 280px;
+}
+
+.text-navbar ul li{
+    display: inline-block;
+    margin-right: 80px;
+    
+}
+
+.text-navbar ul li a{
+    padding: 5px;
+}
+
+.text-navbar ul li a:hover{
+    background-color: #cbf3f0;
+}
+
+.judul{
+    position: absolute;
+    left: 400px;
+    top: 100px;
+    
+    font-size: 36px;
+    line-height: 44px;
+}
+
+/* ----------rot13 zizag---------- */
+
+.cipher{
+    margin-top: 180px;
+    margin-left: 350px;
+}
+
+.cipher-choice{
+    display: inline-block;
+    margin-left: 200px;
+    margin-top: 70px;
+}
+
+.aa{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    padding: 10px;
+}
+
+.aa:hover{
+    color: #2ec4b6;
+}
+
+.aa.active{
+    background-color: #cbf3f0;
+}
+
+/* -------------box dan judul */
+.box-type{
+    position: absolute;
+    width: 1000px;
+    height: 250px;
+    margin-left: 395px;
+
+    /* border: 1px solid black; */
+}
+
+.text-type{
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 80px;
+    margin-right: 220px;
+}
+
+.type-title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 0px;
+}
+
+.input{
+    position: absolute;
+    width: 200px;
+    height: 120px;
+}
+
+.input-key{
+    position: absolute;
+    display: block;
+    left: 336px;
+    top: 20px;
+}
+
+.box-key{
+    width: 100px;
+    height: 20px;
+}
+
+.p-key{
+    font-weight: bold;
+}
+
+.btn{
+    position: absolute;
+    left: 340px;
+    top: 95px;
+}
+
+
+.button{
+    display: block;
+    margin-top: 10px;
+    width: 100px;
+    height: 20px;
+    border: 1px;
+    border-radius: 2px;
+    background-color: #ff9f1c;
+    color: #FFFFFA;
+}
+
+.button:hover{
+    background-color: #ffbf69;
+}
+
+/* ------------penjelasan------------ */
+.information{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 1251px;
+    height: 666px;
+    left: 95px;
+    top: 500px;
+}
+
+.subjud{
+    position: absolute;
+    width: 300px;
+    height: 77px;
+    left: 55px;
+
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+}
+
+.info-des{
+    position: absolute;
+    width: 1137px;
+    height: 156px;
+    left: 55px;
+    top: 110px;
+
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+}
+
+.foot{
+    box-sizing: border-box;
+    position: absolute;
+    top: 1250px;
+    width: 100%;
+    height: 250px;
+
+    border-radius: 20px 20px 0px 0px;
+    background-color: #ff9f1c;
+}
+
+.stakeholder{
+    position: absolute;
+    top: 30px;
+    left: 150px;
+}
+
+.meet{
+    font-weight: 1000;
+    color: #FFFFFA;
+    line-height: 39px;
+    letter-spacing: 5px;
+    font-size: 25px;
+}
+
+.name-team{
+    font-weight: bolder;
+    color: #FFFFFA;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.company{
+    position: absolute;
+}
+
+.foot-logo{
+    position: absolute;
+    left: 1000px;
+    top: 0px;
+}
+.company-name{
+    position: absolute;
+    color: #FFFFFA;
+    font-weight: 1000;
+    letter-spacing: 5px;
+    font-size: 40px;
+    top: 150px;
+
+}
+.logo-foot{
+    width: 210px;
+}
+
+.nav-foot{
+    position: absolute;
+    left: 850px;
+    top: 100px;
+    text-align: right;
+}
+.text-nav{
+    color: #FFFFFA;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-size: 16px;
+
+}

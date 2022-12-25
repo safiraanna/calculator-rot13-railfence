@@ -1,5 +1,5 @@
 function encryptROT13(){
-    const message = document.querySelector('#myInput').value
+    const message = document.querySelector('#toEncrypt').value
     if(message=="") {
       alert("Teks kosong! Tidak bisa di enkripsi"); 
     }
@@ -23,7 +23,7 @@ function encryptROT13(){
       }
     });
     
-    document.querySelector('#myMessage').innerText = word
+    document.getElementById("toDecrypt").value = word;
   }
 
 
@@ -51,5 +51,15 @@ function encryptROT13(){
         }
     });
     
-    document.querySelector('#myDecryptedMessage').innerText = word
+    document.getElementById("toEncrypt").value = word;
   }
+
+  var btnContainer = document.getElementsByClassName("cipher");
+  var btns = btnContainer.getElementsByClassName("aa");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function(){
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+  });
+}

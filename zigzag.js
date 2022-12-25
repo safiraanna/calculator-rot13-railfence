@@ -1,8 +1,8 @@
-function Encrypt() {
-    plaintext = document.getElementById("myInput").value.toLowerCase().replace(/[^a-z]/g, "");  
-    if(plaintext.length < 1){ alert("please enter some plaintext"); return; }    
+function EncryptZigZag() {
+    plaintext = document.getElementById("toEncrypt").value.toLowerCase().replace(/[^a-z]/g, "");  
+    if(plaintext.length < 1){ alert("Teks kosong! Tidak bisa di enkripsi"); return; }    
     var key = parseInt(document.getElementById("key").value);
-    if(key > Math.floor(2*(plaintext.length-1))){ alert("key is too large for the plaintext length."); return; }  
+    if(key > Math.floor(2*(plaintext.length-1))){ alert("kunci terlalu besar untuk plainteks!"); return; }  
     ciphertext = "";
     for(line=0; line<key-1; line++){
         skip=2*(key-line-1);   j=0;
@@ -17,9 +17,9 @@ function Encrypt() {
     document.getElementById("toDecrypt").value = ciphertext;
 }
 
-function Decrypt(f) {
+function DecryptZigZag(f) {
     ciphertext = document.getElementById("toDecrypt").value.toLowerCase().replace(/[^a-z]/g, "");  
-    if(ciphertext.length < 1){ alert("please enter some ciphertext (letters only)"); return; }    
+    if(ciphertext.length < 1){ alert("Teks kosong! Tidak bisa di dekripsi"); return; }    
     var key = parseInt(document.getElementById("key").value);
     if(key > Math.floor(2*(ciphertext.length-1))){ alert("please enter 1 - 22."); return; }      
     pt = new Array(ciphertext.length);   k=0;
@@ -33,5 +33,5 @@ function Decrypt(f) {
         }
     }
     for(i=line; i<ciphertext.length; i+=2*(key-1)) pt[i] = ciphertext.charAt(k++);
-    document.getElementById("myInput").value = pt.join("");
+    document.getElementById("toEncrypt").value = pt.join("");
 }
